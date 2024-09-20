@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Netflix</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://via.placeholder.com/32?text=Logo" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mini Netflix</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#movies">Filmes</a></li>
+                <li><a href="#popular">Populares</a></li>
+                <li><a href="#recommendations">Recomendações</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search-bar" placeholder="Buscar..." class="search-bar">
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bem-vindo ao Mini Netflix</h2>
+            <p>Descubra uma variedade de filmes para todos os gostos.</p>
+            <button>Assista Agora</button>
+        </div>
+        <div class="hero-slider">
+            <div class="slide" style="background-image: url('https://via.placeholder.com/1200x400?text=Destaque+1');"></div>
+            <div class="slide" style="background-image: url('https://via.placeholder.com/1200x400?text=Destaque+2');"></div>
+            <div class="slide" style="background-image: url('https://via.placeholder.com/1200x400?text=Destaque+3');"></div>
+        </div>
+    </section>
+
+    <section id="movies" class="movie-list">
+        <h2>Filmes</h2>
+        <div class="movies-container">
+            <div class="movie" data-id="1">
+                <img src="https://via.placeholder.com/150x225?text=Filme+1" alt="Filme 1">
+                <h3>Filme 1</h3>
+                <p>Um emocionante filme de ação que desafia os limites.</p>
+                <span class="rating">⭐ 4.5</span>
+                <p><strong>Duração:</strong> 120 min</p>
+                <p><strong>Gênero:</strong> Ação, Aventura</p>
+                <button class="watch-now">Assistir</button>
+                <button class="trailer" data-trailer="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Trailer</button>
+                <div class="comments">
+                    <h4>Avaliações:</h4>
+                    <input type="text" placeholder="Deixe seu comentário..." class="comment-input">
+                    <button class="submit-comment">Enviar</button>
+                    <ul class="comment-list"></ul>
+                </div>
+            </div>
+            <!-- Mais filmes -->
+            <div class="movie" data-id="2">
+                <img src="https://via.placeholder.com/150x225?text=Filme+2" alt="Filme 2">
+                <h3>Filme 2</h3>
+                <p>Uma aventura épica em um mundo fantástico.</p>
+                <span class="rating">⭐ 4.8</span>
+                <p><strong>Duração:</strong> 135 min</p>
+                <p><strong>Gênero:</strong> Fantasia, Aventura</p>
+                <button class="watch-now">Assistir</button>
+                <button class="trailer" data-trailer="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Trailer</button>
+                <div class="comments">
+                    <h4>Avaliações:</h4>
+                    <input type="text" placeholder="Deixe seu comentário..." class="comment-input">
+                    <button class="submit-comment">Enviar</button>
+                    <ul class="comment-list"></ul>
+                </div>
+            </div>
+            <div class="movie" data-id="3">
+                <img src="https://via.placeholder.com/150x225?text=Filme+3" alt="Filme 3">
+                <h3>Filme 3</h3>
+                <p>Uma comédia que vai fazer você rir do começo ao fim.</p>
+                <span class="rating">⭐ 4.2</span>
+                <p><strong>Duração:</strong> 100 min</p>
+                <p><strong>Gênero:</strong> Comédia</p>
+                <button class="watch-now">Assistir</button>
+                <button class="trailer" data-trailer="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Trailer</button>
+                <div class="comments">
+                    <h4>Avaliações:</h4>
+                    <input type="text" placeholder="Deixe seu comentário..." class="comment-input">
+                    <button class="submit-comment">Enviar</button>
+                    <ul class="comment-list"></ul>
+                </div>
+            </div>
+            <!-- Adicione mais filmes conforme necessário -->
+        </div>
+    </section>
+
+    <section id="popular" class="movie-list">
+        <h2>Populares</h2>
+        <div class="movies-container">
+            <div class="movie" data-id="4">
+                <img src="https://via.placeholder.com/150x225?text=Popular+1" alt="Popular 1">
+                <h3>Popular 1</h3>
+                <p>Um filme que conquistou o coração do público.</p>
+                <span class="rating">⭐ 5.0</span>
+                <p><strong>Duração:</strong> 110 min</p>
+                <p><strong>Gênero:</strong> Ação, Thriller</p>
+                <button class="watch-now">Assistir</button>
+                <button class="trailer" data-trailer="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Trailer</button>
+                <div class="comments">
+                    <h4>Avaliações:</h4>
+                    <input type="text" placeholder="Deixe seu comentário..." class="comment-input">
+                    <button class="submit-comment">Enviar</button>
+                    <ul class="comment-list"></ul>
+                </div>
+            </div>
+            <!-- Adicione mais filmes populares -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mini Netflix. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
